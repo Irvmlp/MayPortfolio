@@ -21,7 +21,101 @@ code {
 @font-face {
   font-family: LipoItalic;
   src: url(./pages/LipoBoldItalic.otf);
+
+}
+@font-face {
+  font-family: GTWalsh;
+  src: url(./pages/GTWalsheimPro-Light.ttf);
+  
+}
+@font-face {
+  font-family: GTWalshBold;
+  src: url(./pages/GTWalsheimPro-CondensedBlackOblique.ttf);
+  
+}
+.GtRegularBold {
+  font-family: GTWalshBold;
 }
 .LipoItalic {
   font-family: LipoItalic;
 }
+.GtRegular {
+  font-family: GTWalsh;
+}
+
+/* Define sliding animation */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply sliding animation to page transition */
+.page-enter {
+  animation: slideInFromLeft 0.5s ease forwards;
+}
+
+.page-exit {
+  animation: slideOutToLeft 0.5s ease forwards;
+}
+
+.bottom-line {
+  border-bottom-width: 2px; /* Adjust the thickness of the border */
+  border-bottom-style: solid; /* Ensure the border style is solid */
+  border-bottom-color: gray;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow with the desired values */
+}
+.bottom-line2 {
+  margin-top: 1px;
+  border-bottom-width: 1px; /* Adjust the thickness of the border */
+  border-bottom-style: solid; /* Ensure the border style is solid */
+  border-bottom-color: gray;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow with the desired values */
+}
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-slide {
+  animation: slide 8s linear infinite;
+}
+.top-line {
+  border-top: 2px solid gray;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Change color and thickness as needed */
+}
+.custom-border-right {
+  border-right: 2px solid gray;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .top-line {
+    margin-top: 2px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-line {
+    margin-bottom: -2px; /* Further adjust margin for even smaller screens */
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .LipoItalic {
+    font-size: 12rem; /* Adjust font size for smaller screens */
+  }
+}
+

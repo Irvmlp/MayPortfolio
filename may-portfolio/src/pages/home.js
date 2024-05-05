@@ -1,29 +1,20 @@
 // Portfolio.js
 import React from 'react';
+import Header from '../components/header';
+import CoolFooter from '../components/nameFooter';
+import MiddleSection from '../components/middleSection';
 
 function Portfolio() {
   return (
-    <div>
+    <div> 
+        <Header/>
       <section>
-        <div className='w-full bg-red-500'>
-            <div className='bg-black w-2/3 h-screen relative'>
-                <h3 className='md:text-[160px]/[150px] text-[160] absolute bottom-0 text-white LipoItalic'> IRVING LAMADRID </h3>
-            </div>
-            <div className='w-1/2 -1/2'>
-                
-            </div>
+        <div className='w-full bg-[#F2EFF1]'>
+                <MiddleSection/>   
         </div>
+        <CoolFooter/>
       </section>
-      <section>
-        <div className='w-full bg-red-500'>
-            <div className='bg-red-200 w-2/3 h-screen relative'>
-                <h3 className='md:text-[160px]/[150px] text-[160] absolute bottom-0 text-white LipoItalic'> IRVING LAMADRID </h3>
-            </div>
-            <div className='w-1/2'>
-                
-            </div>
-        </div>
-      </section>
+    
     </div>
   );
 }
