@@ -20,17 +20,17 @@ code {
 
 @font-face {
   font-family: LipoItalic;
-  src: url(./pages/LipoBoldItalic.otf);
+  src: url(./pages/fonts/LipoBoldItalic.otf);
 
 }
 @font-face {
   font-family: GTWalsh;
-  src: url(./pages/GTWalsheimPro-Light.ttf);
+  src: url(./pages/fonts/GTWalsheimPro-Light.ttf);
   
 }
 @font-face {
   font-family: GTWalshBold;
-  src: url(./pages/GTWalsheimPro-CondensedBlackOblique.ttf);
+  src: url(./pages/fonts/GTWalsheimPro-CondensedBlackOblique.ttf);
   
 }
 .GtRegularBold {

@@ -1,13 +1,22 @@
-// About.js
+// Portfolio.js
 import React from 'react';
+import Header from '../components/header/foot/sider/header';
+import CoolFooter from '../components/header/foot/sider/Footer';
+import MiddleSection from '../components/aboutBranch/1-aboutSection';
 
-function About() {
+function about() {
   return (
-    <div className='bg-blue-200'>
-      <h2>About Page</h2>
-      <p>This is the About page content.</p>
+    <div> 
+        <Header/>
+      <section>
+        <div className='w-full bg-[#F2EFF1]'>
+                <MiddleSection/>   
+        </div>
+        <CoolFooter/>
+      </section>
+    
     </div>
   );
 }
 
-export default About;
+export default about;

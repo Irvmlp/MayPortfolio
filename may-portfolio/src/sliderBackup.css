@@ -1,0 +1,120 @@
+html,
+body,
+.section,
+.section__main,
+.slider,
+.slider__slides,
+.slider__slides__wrapper {
+  height: 100%;
+}
+
+.section { /* box with all the content  */
+  overflow: hidden;
+  margin-top: 170px;
+  background-color: #bed114;
+}
+.slider__navigation__button {
+  border: 9px solid rgb(181, 14, 14);
+  border-radius: 2px;
+  color: #c71010;
+  padding: 20px 30px;
+}
+.navigation--is-active .slider__slides {
+  transform: translateY(40%) scale(.8);
+}
+.slider__slides__wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 300%;
+  height: 450px;
+  transition: transform .45s linear;
+  transition-delay: .25s;
+}
+@media (min-width: 800px) {
+  .slider__slides__slide__content {
+    font-size: 5vw;
+    line-height: 3vw;
+    color: #000;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.section__main { /* the black background */
+  position: relative;
+  background: #c31818;
+  z-index: 1;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, .15);
+}
+.slider__slides {
+  transition: transform .30s linear;
+}
+button {
+  background-color: transparent;
+  transition: all .20s linear;
+}
+.slider__slides__slide {  /* this is the actual page */
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  border: 10px solid #1a507f;
+  text-align: center;
+  transform: scale(.9); /* how much it shrinks */
+  transition: transform .25s linear 0s;
+}
+
+.slider__slides__slide--is-active {
+  transform: scale(1);
+  transition-delay: .8s;
+}
+
+
+.slider__slides__slide__content { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #119349;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.navigation {
+  font-size: 18px;
+  line-height: 28px;
+  color: #a8dd2b;
+  background-color: #c9e487;
+  border-radius: 5px;
+  border: 10px solid #972c2c;
+  padding: 15px 30px;
+}
+.slider__navigation { /* slider buttons */
+  position: fixed;
+  z-index: 40;
+  background-color: #dec176;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  top: calc(15% + 10px);
+  width: 200%;
+  max-width: 400px;
+  margin: auto;
+}
