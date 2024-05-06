@@ -7,14 +7,17 @@ const Banner = () => {
         <div className="flex items-center">
          {/*  <Link to="/" className="ml-2 font-inter">Product Design Engineer</Link> */}
         </div>
-        <div className="md:flex-row flex items-center font-inter justify-end ml-4"> {/* Adjusted justify-end */}
+        <div className="md:flex-row flex items-center font-inter justify-center ml-4"> {/* Adjusted justify-end */}
           <button className="slider__navigation__button" data-slide-index="0">
-            Home
+            About Me
           </button>
           <button className="slider__navigation__button" data-slide-index="1">
-            About
+            Home Page
           </button>
           <button className="slider__navigation__button" data-slide-index="2">
+            My Work
+          </button>  
+          <button className="">
             My Work
           </button>   
         </div>

@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import $ from 'jquery'; // Import jQuery (assuming you have it installed)
-import Header from '../components/header/foot/sider/header';
-import NameFooter from '../components/header/foot/sider/Footer';
+import Header from '../components/za-other/foot/sider/header';
+import NameFooter from '../components/za-other/foot/sider/Footer';
 import '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/portfolio.css'; // Import your CSS file
 import MiddleSection from '../components/homeBranch/1-sliderSection';
 import AboutSection from '../components/aboutBranch/1-aboutSection';
 import PortfolioSection from '../components/workBranch/1-portfolioSection';
 
 function Portfolio() {
+
+  
   const [slideIndex, setSlideIndex] = useState(null);
 
   useEffect(() => {
@@ -63,47 +65,21 @@ function Portfolio() {
   return (
     <div>
       <Header/>
-    
-
-      <section className="section">
-        
+      <section className="section">      
         <main className="section__main">
           <div className="slider">
-            <div className="slider__navigation">
-
-            {/*   <ButtonSlider/> */}
-            
-            </div>
-
-
-
+           
             <div className="slider__slides">
-
-
-
               <div className="slider__slides__wrapper">
-
-                
-
-                <div className="slider__slides__slide slider__slides__slide--is-active">
-                <PortfolioSection/>
-               
+                <div className="slider__slides__slide slider__slides__slide--is-active">   
+                  <MiddleSection/>                 
                 </div>
-
                 <div className="slider__slides__slide slider__slides__slide--is-active">
-                <MiddleSection/> 
+                <PortfolioSection/>        
                 </div>
-
                 <div className="slider__slides__slide slider__slides__slide--is-active">
-                <AboutSection/>
+                <AboutSection/> 
                 </div>
-
-
-
-
-
-
-
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ import SecondCol from './3-secondColPortfolio';
 const middleSectionColum = () => {
   return (
       
-            <div className='flex flex-col h-full bg-[#F2EFF1] mt-1'>
+            <div className='flex flex-col h-full bg-[#F5F5F5] mt-1'>
                 
                 <SecondCol/>
               

@@ -15,11 +15,15 @@ body,
 }
 .slider__navigation__button {
   border-radius: 2px;
-  color: gray;
-  font-size: medium;
+  color: black;
+  font-size: large;
   padding: 10px;
   margin-right:12px;
 }
+.slider__navigation__button:hover {
+  background-color: rgba(207, 36, 36, 0.15);
+}
+
 .navigation--is-active .slider__slides {
   transform: translateY(40%) scale(.8);
 }
@@ -44,9 +48,7 @@ body,
   background: #F2EFF1;
   z-index: 1;
 }
-button:hover {
-  background-color: rgba(255, 255, 255, .15);
-}
+
 .slider__slides {
   transition: transform .30s linear;
 }

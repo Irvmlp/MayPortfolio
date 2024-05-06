@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import MiddleSection from './4-middle-middleSectionSlider';
-import BulbLogo from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/Logo.png';
+/* import BulbLogo from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/Logo.png'; */
+import IrvingPic from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/Irving_Portfolio_rain2.png';
+import { ReactComponent as MySVG } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/svg1.svg';
+import { ReactComponent as MySVG2 } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/svg2.svg';
 
 
 const SecondCol = () => {
@@ -24,13 +27,12 @@ const SecondCol = () => {
   }, []); // Empty dependency array ensures that this effect runs only once on component mount
 
   return (
-    <div className='h-screen md:h-full mb-1 flex flex-col md:flex-row'> {/* second */}
+    <div className='h-full md:h-full mb-1 flex flex-col md:flex-row'> {/* second */}
+     
       {!isScreenSmall && (
-       
-      <div className="flex justify-center items-center max-w-full md:h-full max-h-4/5 md:w-1/2 bg-black"> {/* third */}
-      <img src={BulbLogo} className='w-100 h-auto' alt="Description" />
-      </div>
-       
+       <div className="w-full md:w-1/6 -mt-8 md:mt-0 bg-white custom-border-right">
+        <MySVG2 className="w-101% mt-4 ml-1.5"/>
+       </div>
       )}
 
 
@@ -39,9 +41,12 @@ const SecondCol = () => {
       </div>
 
  
-      <div className="w-full md:w-1/4 -mt-8 md:mt-0 bg-yellow-400 custom-border-right">
-        
-        </div>
+      <div className="flex justify-center items-center max-w-full md:h-full max-h-4/5 md:w-1/3 "> {/* third */}
+      <img src={IrvingPic} alt="Irving's Picture" className="md:h-auto h-96" />
+
+      </div>
+ 
+
     </div>
   );
 };

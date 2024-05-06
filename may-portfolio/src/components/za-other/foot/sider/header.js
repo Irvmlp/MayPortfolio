@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-10 bg-[#F2EFF1] backdrop-filter lg:py-4 mt-8 md:mt-0 text-gray-900 font-inter">
+    <nav className="fixed top-0 w-full z-10 bg-[#F5F5F5] backdrop-filter lg:py-4 mt-8 md:mt-0 text-gray-900 font-inter">
       <div className="flex justify-between items-center ">
         <Link to="/" className="font-bold text-3xl font-inter px-6">Irving Lamadrid</Link>
         <div className="lg:hidden">
@@ -22,13 +22,20 @@ const Header = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden mr-4 lg:flex ">
-          <Link to="/" className="px-3 py-2">Home</Link>
-          <Link to="/about" className="px-3 py-2">About</Link>
-          <Link to="/portfolio" className="px-3 py-2">Portfolio</Link>
-          <Link to="/blog" className="px-3 py-2">Blog</Link>
+        <div className="hidden mr-4 lg:flex font-bold ">
+        <button className="slider__navigation__button" data-slide-index="0">
+            HOME
+          </button>
+          <button className="slider__navigation__button" data-slide-index="1">
+           PROJECTS
+          </button>
+          <button className="slider__navigation__button" data-slide-index="2">
+           ABOUT
+          </button>  
+       
           {/* Add more links as needed */}
         </div>
+      
       </div>
       <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
       <hr className='bottom-line2'></hr>

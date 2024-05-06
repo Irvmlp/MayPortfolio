@@ -1,7 +1,7 @@
 // Portfolio.js
 import React from 'react';
-import Header from '../components/header/foot/sider/header';
-import CoolFooter from '../components/header/foot/sider/Footer';
+import Header from '../components/za-other/foot/sider/header';
+import CoolFooter from '../components/za-other/foot/sider/Footer';
 import MiddleSection from '../components/aboutBranch/1-aboutSection';
 
 function about() {

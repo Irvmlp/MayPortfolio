@@ -25,13 +25,10 @@ const SecondCol = () => {
     <div className='h-screen md:h-full mb-1 flex flex-col md:flex-row'> {/* second */}
   
 
-      <div className="w-full md:h-full h-3/5  md:w-3/4 custom-border-right">
+      <div className="w-full md:h-full h-3/5  md:w-full custom-border-right">
         <MiddleSection />
       </div>
 
-
-      <div className="w-full md:w-1/4 -mt-8 md:mt-0 bg-orange-300 custom-border-right">
-      </div>
 
     </div>
   );
