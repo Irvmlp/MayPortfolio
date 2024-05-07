@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,7 +9,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative; /* Add this to make ::before absolute positioning relative to body */
+  background: 
+    linear-gradient(rgba(20, 59, 178, 0.05) 2px, transparent 1px) 0 0,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0;
+  background-size: 20px 20px;
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+  background: 
+    linear-gradient(rgba(147, 65, 65, 0.05) 1px, transparent 1px) 0 0,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0;
+  background-size: 20px 20px;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -75,15 +93,16 @@ code {
   border-bottom-width: 2px; /* Adjust the thickness of the border */
   border-bottom-style: solid; /* Ensure the border style is solid */
   border-bottom-color: gray;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow with the desired values */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); /* Add a shadow with the desired values */
 }
 .bottom-line2 {
-  margin-top: 1px;
+  margin-top: 0px;
   border-bottom-width: 1px; /* Adjust the thickness of the border */
   border-bottom-style: solid; /* Ensure the border style is solid */
-  border-bottom-color: gray;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow with the desired values */
+  border-bottom-color: black;
+ /* Add a shadow with the desired values */
 }
+
 @keyframes slide {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
@@ -93,29 +112,31 @@ code {
   animation: slide 8s linear infinite;
 }
 .top-line {
-  border-top: 2px solid gray;
+  border-top: 1px solid gray;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Change color and thickness as needed */
 }
 .custom-border-right {
   border-right: 2px solid gray;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+
 @media (max-width: 768px) {
   .top-line {
-    margin-top: 2px; /* Adjust margin for smaller screens */
+    margin-top: 0px; /* Adjust margin for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .top-line {
-    margin-bottom: -2px; /* Further adjust margin for even smaller screens */
+    margin-bottom: 2px; /* Further adjust margin for even smaller screens */
   }
 }
-
 /* Responsive styling */
 @media (max-width: 768px) {
   .LipoItalic {
-    font-size: 12rem; /* Adjust font size for smaller screens */
+    font-size: 9rem; /* Adjust font size for smaller screens */
   }
 }
 

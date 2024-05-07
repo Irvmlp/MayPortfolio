@@ -1,0 +1,9 @@
+/* Add these styles to your CSS file */
+.projects-container {
+  transition: height 0.5s ease;
+  overflow: hidden;
+}
+
+.projects-container.hidden {
+  height: 0;
+}
