@@ -1,8 +1,7 @@
 // Header.js
 import React, { useState, useEffect } from 'react';
-import Picture from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/Irving_Portfolio_rain2.png';
+import Picture from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/gallery/Irving_Portfolio_rain2.png';
 import Info from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-NewComponents/Info.js';
-import { ReactComponent as MySVG2 } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/svg2.svg';
 
 
 const Main = () => {
@@ -31,7 +30,7 @@ const Main = () => {
 
      <div className='flex flex-col md:flex-row'>
      {!isScreenSmall && (
-       <div className='w-full min-h-full  md:w-1/6 bg-[#F5F5F5] border-r-2 border-gray-900'>  <MySVG2 className="w-101% px-1 py-1 ml-1.5"/></div>
+       <div className='w-full min-h-full  md:w-1/6 bg-[#F5F5F5] border-r-2 border-gray-900'>  </div>
       )}
 
         <div className='w-full md:w-3/5 border-r-2 border-gray-900'>  

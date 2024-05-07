@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/index.css';
-import '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/newnew.css';
-import llamaPic from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/llamaPic.png';
+import llamaPic from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/gallery/llamaPic.png';
 
 const CustomComponent = ({ backgroundColor, title, subtitle, description, tools, image }) => {
   const [hidden, setHidden] = useState(false);
 
-  return (
-    <div className={`card-container ${hidden ? 'hidden' : ''} h-screen py-24 px-20 w-full`}>
+  return ( 
+    <div className={`card-container ${hidden ? 'hidden' : ''} h-screen py-28 px-20 w-full`}>
       <div className={`${backgroundColor} flex-col rounded-2xl h-full py-10`}>
+        
         <div className="flex flex-col md:flex-row w-full h-full px-4">
           <div className="w-full md:w-3/5 p-4 text-black py-10 px-10">
             <h2 className="text-7xl font-bold">{title}</h2>

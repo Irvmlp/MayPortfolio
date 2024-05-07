@@ -1,5 +1,5 @@
 import React from 'react';
-import BioInfo from './nameInfo'; 
+import BioInfo from './nameInfoBlack'; 
 
 const Name = () => {
   return (
@@ -9,7 +9,8 @@ const Name = () => {
         <BioInfo/>
       </div>
       <div className="w-full md:w-1/3 flex mt-48 bottom-0">
-        <div className='h-64 w-24 bg-blue-100'> 
+        <div className='h-64 w-24'> 
+        asjdnlijabdashid aia 
         </div
 >      </div>
     </div>

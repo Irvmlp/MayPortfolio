@@ -1,0 +1,65 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body-erase {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; /* Add this to make ::before absolute positioning relative to body */
+  background: 
+    linear-gradient(rgba(6, 21, 67, 0.05) 2px, transparent 1px) 0 0,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0;
+  background-size: 20px 20px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+  background: 
+    linear-gradient(rgba(147, 65, 65, 0.05) 1px, transparent 1px) 0 0,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px) 0 0;
+  background-size: 20px 20px;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: LipoItalic;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/LipoBoldItalic.otf');
+
+}
+@font-face {
+  font-family:GTWalshBold ;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/GTWalsheimPro-CondensedUltraBold.ttf');
+  
+}
+@font-face {
+  font-family:GTWalsh;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/GTWalsheimPro-Light.ttf');
+  
+}
+.GtRegularBold {
+  font-family: GTWalshBold;
+}
+.LipoItalic {
+  font-family: LipoItalic;
+}
+.GtRegular {
+  font-family: GTWalsh;
+}
+
+

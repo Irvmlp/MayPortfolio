@@ -1,14 +1,9 @@
 // Header.js
 import React, { useState, useEffect } from 'react';
-import Picture from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/Irving_Portfolio_rain2.png';
+import Picture from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/gallery/Irving_Portfolio_rain2.png';
 import Info from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-NewComponents/Info.js';
-import { ReactComponent as MySVG2 } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/svg2.svg';
 import Project from './projectDropDown';
-import Project1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/background1.png'; // Importing the PNG image
-import Project2 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/background1.png';
-import Project3 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/background1.png';
-import Project4 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/background1.png';
-import Project5 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/background1.png';
+import Project1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/gallery/background1.png'; // Importing the PNG image
 
 const Main = () => {
    

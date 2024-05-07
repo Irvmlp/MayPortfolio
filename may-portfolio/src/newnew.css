@@ -1,9 +1,3 @@
-/* Add these styles to your CSS file */
-.projects-container {
-  transition: height 0.5s ease;
-  overflow: hidden;
-}
-
-.projects-container.hidden {
-  height: 0;
+.max-h-screen {
+  max-height: calc(100vh - 120px); /* Adjust as needed */
 }

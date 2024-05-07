@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CustomComponent from './CaseStudyCard'; // Import CustomComponent
 import ToolBtn from './toolBtn';
-import '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/newnew.css';
 
 const Projects = ({ title, subtitle, description, tools, image, backgroundColor }) => {
+  const [scrollEnabled, setScrollEnabled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Check if the user has scrolled to the bottom of the page
+      if (windowHeight + scrollTop >= documentHeight) {
+        setScrollEnabled(true);
+      } else {
+        setScrollEnabled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="">
+    <div className={scrollEnabled ? '' : 'overflow-hidden'}>
       <CustomComponent
         title="Llamaedu.com"
         subtitle="Branding, Web, UI/UX"
@@ -14,7 +36,7 @@ const Projects = ({ title, subtitle, description, tools, image, backgroundColor 
           <ToolBtn tooltitle="Figma" imgSrc="" />,
           <ToolBtn tooltitle="Figma" imgSrc="" />,
           <ToolBtn tooltitle="Figma" imgSrc="" />
-        ]} // Pass ToolBtn components as an array
+        ]}
         image={image}
         backgroundColor="bg-[#FDFF00]"
       />
@@ -27,7 +49,7 @@ const Projects = ({ title, subtitle, description, tools, image, backgroundColor 
           <ToolBtn tooltitle="JAVA" imgSrc="" />,
           <ToolBtn tooltitle="MySpql" imgSrc="" />,
           <ToolBtn tooltitle="Asana" imgSrc="" />
-        ]} // Pass ToolBtn components as an array
+        ]}
         image={image}
         backgroundColor="bg-[#00C5FF]"
       />
@@ -40,7 +62,7 @@ const Projects = ({ title, subtitle, description, tools, image, backgroundColor 
           <ToolBtn tooltitle="JAVA" imgSrc="" />,
           <ToolBtn tooltitle="MySpql" imgSrc="" />,
           <ToolBtn tooltitle="Asana" imgSrc="" />
-        ]} // Pass ToolBtn components as an array
+        ]}
         image={image}
         backgroundColor="bg-[#00FF04]"
       />
