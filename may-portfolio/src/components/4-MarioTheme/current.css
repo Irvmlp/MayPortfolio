@@ -1,0 +1,67 @@
+
+.body4 {
+  background-color: #65BBF6; /* Light cream color */
+  background-blend-mode: overlay; /* Blend the grainy texture with the background */
+  background-repeat: repeat;
+  background-position: center center;
+  color: #120a88; /* B
+   /* Add grayscale effect to make it look aged */
+}
+.text-with-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* horizontal-offset vertical-offset blur-radius color */
+}
+
+@font-face {
+  font-family: Nintendo;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/Super Mario Bros. 2.ttf');
+}
+.NintendoFont {
+  font-family: Nintendo;
+}
+@font-face {
+  font-family: SuperMarioFont;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/SuperMarioBrosWii.otf');
+}
+.SuperFont {
+  font-family: SuperMarioFont;
+}
+@font-face {
+  font-family: ComicSans;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/COMICBOLD.ttf');
+}
+
+.ComicFont {
+  font-family: ComicSans;
+}
+@font-face {
+  font-family: ComicBold;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/PlasticLoveRegular-MVO9v.ttf');
+}
+.Comical {
+  font-family: ComicBold;
+}
+
+@font-face {
+  font-family: LipoItalic;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/LipoBoldItalic.otf');
+
+}
+@font-face {
+  font-family:GTWalshBold ;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/GTWalsheimPro-CondensedUltraBold.ttf');
+  
+}
+@font-face {
+  font-family:GTWalsh;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/GTWalsheimPro-Light.ttf');
+  
+}
+.GtRegularBold {
+  font-family: GTWalshBold;
+}
+.LipoItalic {
+  font-family: LipoItalic;
+}
+.GtRegular {
+  font-family: GTWalsh;
+}

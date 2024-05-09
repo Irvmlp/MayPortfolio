@@ -1,0 +1,30 @@
+
+background-black {
+  margin: 0;
+  background: green;
+}
+
+@font-face {
+  font-family: LipoItalic;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/LipoBoldItalic.otf');
+
+}
+@font-face {
+  font-family:GTWalshBold ;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/GTWalsheimPro-CondensedUltraBold.ttf');
+  
+}
+@font-face {
+  font-family:GTWalsh;
+  src: url('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/fonts/GTWalsheimPro-Light.ttf');
+  
+}
+.GtRegularBold {
+  font-family: GTWalshBold;
+}
+.LipoItalic {
+  font-family: LipoItalic;
+}
+.GtRegular {
+  font-family: GTWalsh;
+}
