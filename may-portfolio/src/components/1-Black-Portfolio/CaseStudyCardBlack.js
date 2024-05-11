@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import llamaPic from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/gallery/llamaPic.png';
 
 const CustomComponent = ({ backgroundColor, title, subtitle, description, tools, image }) => {
   const [hidden, setHidden] = useState(false);
@@ -17,8 +16,8 @@ const CustomComponent = ({ backgroundColor, title, subtitle, description, tools,
               {tools}
             </div>
           </div>
-          <div className="w-full md:w-2/5 p-4">
-            <img src={llamaPic} alt="Image" className="mr-4 mt-8 w-full h-auto" />
+          <div className="w-full  md:w-2/5 p-4">
+            <img src={image} alt="Image" className="mt-8 w-full h-auto" />
           </div>
         </div>
       </div>
