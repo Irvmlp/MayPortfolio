@@ -1,5 +1,4 @@
 import React from 'react';
-import '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/3-CartoonPortfolio/cartoon.css';
 import { ReactComponent as Name } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/name_marioBros.svg';
 
 const BioInfo = () => {

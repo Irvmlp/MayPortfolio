@@ -3,10 +3,20 @@ import { ReactComponent as ArrowL } from '/Users/irvinglamadrid/MayPortfolio/may
 import { ReactComponent as ArrowR } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/arrowR.svg';
 import { ReactComponent as LLamaUserJourney } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/llamaUserJourney.svg';
 
-import Mockup1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/llama1.png';
-import Mockup2 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/llama2.png';
-import Mockup3 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/llama3.png';
+import Mockup1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/llama1.png';
+import Mockup2 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/llama2.png';
+import Mockup3 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/llama3.png';
+import Mockup4 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/llama4.png';
+
 import FigmaLLama from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/llamaFigma.png';
+
+import Brand1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/brand1.png';
+import Brand2 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/brand2.png';
+import Brand3 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/brand3.png';
+import Brand4 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/brand4.png';
+import Brand5 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/brand5.png';
+import Brand6 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/brand6.png';
+import Brand7 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/brand7.png';
 
 
 const LlamaProject = () => {
@@ -58,6 +68,20 @@ const LlamaProject = () => {
     <p className='GtRegular justify-end text-right flex flex-row px-8 mt-2 md:px-16'>Both of my sisters our teachers. With my sisters idea and my experience in Product Design, I helped them with the UI/UX aspect.</p>
 </div>
     </div>  
+</section>
+ {/* 2. Product */}
+<section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
+    <div className='flex w-full h-12 items-end  '>  
+            <h2 className='text-2xl md:text-4xl px-6 GtRegularBold text-[#0542BA]'>The Product</h2>
+    </div>   
+    <div className='mt-12  items-center justify-center flex  w-full'>
+        <div className='w-1/2 h-1/2'>
+         <img src={Mockup4} loading='lazy' className="mr-4 -mt-4 md:mt-8 w-full h-auto" />
+        </div>
+     </div>
+     <div className='flex w-full h-24 items-center px-8 mt-12 md:mt-0'>  
+            <h2 className='text-lg GtRegular md:text-2xl text-black'>Our product was for teachers with teachers at the center of the design. Using my skills as a product designer and my teachers experience with lesson plans. </h2>
+    </div>   
 </section>
  {/* 2. Product */}
  <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
@@ -140,55 +164,35 @@ const LlamaProject = () => {
         </div>
     </div>  
 </section>
-    {/* 4. User Needs and Design Principles */}
 
-    <section className='flex flex-col md:flex-row py-8 mt-12 rounded-xl border-2 botder-white h-full w-full mx-auto'>
-    <div className='flex  w-full md:w-1/2 h-1/2 md:h-full  flex-col'>
-        <div className='px-8 flex text-4xl w-full'>
-            <h2 className='GtRegularBold text-white'>Early Concept</h2>
-        </div>
-        <div className='flex h-64 items-center text-white text-lg bg-gray-600 '>
-           
-            <p className='GtRegular flex flex-row px-8 md:px-6'>  Our story starts in Phoenix, both of my sisters are teachers. </p>
-        </div>
-    </div>  
-    <div className='flex w-full md:w-1/2 h-1/2 md:h-full flex-col'>
-        <div className='flex px-8 text-4xl w-full justify-end'>
-            <h2 className='GtRegularBold text-white' >Initial Prototypes</h2>
-        </div>
-        <div className='flex h-64 items-center text-lg justify-end bg-gray-200'>
-            <p className='GtRegular text-white px-8 md:px-6'>Our story starts in Phoenix, both of my sisters are teachers.</p>
-          
-        </div>
-    </div>
-</section>
  {/* 3. Prompter */}
- <section className='flex flex-col py-8 border-2 border-white mt-12 rounded-xl  h-full w-full mx-auto'>
+ <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
     <div className='flex w-full h-12 items-end  '>  
-            <h2 className='text-2xl md:text-4xl px-6 GtRegularBold text-white underline-offset-5 underline'>1.Creating the Llama Edu Brand</h2>
+            <h2 className='text-2xl md:text-4xl px-6 GtRegularBold text-[#0542BA] '>1.Creating the Llama Edu Brand</h2>
     </div>   
-    <div className='mt-12  items-center justify-center flex  w-full'>
-        <div className='w-auto h-full'>
-         <img src={Mockup1} loading='lazy' className="w-full h-96" />
+    <div className='mt-12  items-center justify-center flex flex-col w-full'>
+        <div className='w-full md:w-3/4 h-auto'>
+         <img src={Brand1} loading='lazy' className="w-full h-auto" />
         </div>
+        <div className='w-full mt-2 md:w-3/4 flex flex-row h-auto'>
+         <img src={Brand2} loading='lazy' className="w-1/2 h-auto" />
+         <img src={Brand3} loading='lazy' className="w-1/2 h-auto" />
+        </div>
+        <div className='w-full mt-2 md:w-3/4 flex flex-row h-auto'>
+         <img src={Brand4} loading='lazy' className="w-1/2 h-auto" />
+         <img src={Brand5} loading='lazy' className="w-1/2 h-auto" />
+        </div>
+        <div className='w-full mt-2 md:w-3/4 flex flex-row h-auto'>
+         <img src={Brand6} loading='lazy' className="w-1/2 h-auto" />
+         <img src={Brand7} loading='lazy' className="w-1/2 h-auto" />
+        </div>
+        
      </div>
      <div className='flex w-full h-24 items-center mt-4 px-8'>  
-            <h2 className='text-lg GtRegular md:text-2xl text-white'>1. The product UI/UX should reflect a project management software to offer 
+            <h2 className='text-lg GtRegular md:text-2xl text-gray-900'>1. The product UI/UX should reflect a project management software to offer 
             flexibility in planning classes and standards. </h2>
     </div>   
-    {/* split here bwtween brand and animatois */}
-    <div className='flex w-full h-12 items-end mt-8  '>  
-            <h2 className='text-2xl md:text-4xl px-6 GtRegularBold text-white underline-offset-5 underline'>1.Creating the Llama Edu Brand</h2>
-    </div>   
-    <div className='mt-12  items-center justify-center flex  w-full'>
-        <div className='w-auto h-full'>
-         <img src={Mockup1} loading='lazy' className="w-full h-96" />
-        </div>
-     </div>
-     <div className='flex w-full h-24 items-center mt-4 px-8'>  
-            <h2 className='text-lg GtRegular md:text-2xl text-white'>1. The product UI/UX should reflect a project management software to offer 
-            flexibility in planning classes and standards. </h2>
-    </div>   
+    
 </section>
  {/* 2. Product */}
  <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
@@ -223,7 +227,28 @@ const LlamaProject = () => {
     </div>   
 </section>
 
+{/* 4. User Needs and Design Principles */}
 
+<section className='flex flex-col md:flex-row py-8 mt-12 rounded-xl border-2 botder-white h-full w-full mx-auto'>
+    <div className='flex  w-full md:w-1/2 h-1/2 md:h-full  flex-col'>
+        <div className='px-8 flex text-4xl w-full'>
+            <h2 className='GtRegularBold text-white'>Early Concept</h2>
+        </div>
+        <div className='flex h-64 items-center text-white text-lg bg-gray-600 '>
+           
+            <p className='GtRegular flex flex-row px-8 md:px-6'>  Our story starts in Phoenix, both of my sisters are teachers. </p>
+        </div>
+    </div>  
+    <div className='flex w-full md:w-1/2 h-1/2 md:h-full flex-col'>
+        <div className='flex px-8 text-4xl w-full justify-end'>
+            <h2 className='GtRegularBold text-white' >Initial Prototypes</h2>
+        </div>
+        <div className='flex h-64 items-center text-lg justify-end bg-gray-200'>
+            <p className='GtRegular text-white px-8 md:px-6'>Our story starts in Phoenix, both of my sisters are teachers.</p>
+          
+        </div>
+    </div>
+</section>
 
 
      <section className='mt-12 bg-red-500 border-b-2 border-stone-800 min-h-[450px] w-full'>

@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
 const CustomComponent = ({ backgroundColor, title, subtitle, description, tools, image }) => {
+  
+  
+  
   const [hidden, setHidden] = useState(false);
 
   return ( 
-    <div className={`card-container ${hidden ? 'hidden' : ''} h-screen py-28 px-20 w-full`}>
+    <div className={`card-container ${hidden ? 'hidden' : ''} h-screen py-28 px-20 w-full cursor-pointer`}>
       <div className={`${backgroundColor} flex-col rounded-2xl h-full py-10 border-2 border-white`}>
         
         <div className="flex flex-col md:flex-row w-full h-full px-4">

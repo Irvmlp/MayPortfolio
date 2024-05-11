@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CustomComponent from '../../components/4-MarioTheme/3a.CaseStudyCard'; // Import CustomComponent
-import ToolBtn from '../../components/3-CartoonPortfolio/3a.Tools';
+import ToolBtn from '../../components/4-MarioTheme/3a.Tools';
 
 const Projects = ({ title, subtitle, description, tools, image }) => {
   return (

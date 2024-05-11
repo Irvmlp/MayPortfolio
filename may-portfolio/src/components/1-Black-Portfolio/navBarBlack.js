@@ -42,7 +42,7 @@ const Header = () => {
           </button>
           <button>
             <Link
-              to="/BlackProjects"
+              to="/About"
               onClick={() => handleButtonClick("About")}
               className={`font-bold text-l GtRegular px-8 py-3 text-black rounded-lg ${selectedButton === "About"  ? "bg-[white] text-black": "text-white bg-transparent"} mr-2`}
             >
