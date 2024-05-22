@@ -12,12 +12,6 @@
   transition: .3s; 
 }
 
-roll-button:hover, button:active {
-  background: #50514F;
-  cursor: pointer;
-  transform: translateY(15px); 
-}
-
 .game {
   margin-top: 400px;
   position: relative;

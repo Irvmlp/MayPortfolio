@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const MobileMenu = ({ isOpen, onClose }) => {
   return (
-    <div className={`fixed top-0 left-0 w-full h-full bg-white z-50 ${isOpen ? 'block' : 'hidden'}`}>
+    <div className={`fixed w-full h-full bg-white  ${isOpen ? 'block' : 'hidden'}`}>
       <div className="flex flex-col items-center justify-center h-full">
         <Link to="/real" className="text-gray-800 py-2">Home</Link>
         <Link to="/about" className="text-gray-800 py-2">About</Link>
@@ -16,7 +16,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
     <path d="M6 18L18 6M6 6l12 12"></path>
   </svg>
 </button>
-
+ 
       </div>
     </div>
   );

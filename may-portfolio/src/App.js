@@ -18,12 +18,8 @@ export default function App() {
           <Route path="/" element={<Black/>} />
           <Route path='About' element={<BlackAbout/>} />
 
-          <Route path="/Loose" element={<Loose />} />
-          <Route path="/LooseProjects" element={<LooseProjects />} />
-
-
           <Route path="/Black" element={<Black />} /> 
-          <Route path="/BlackProjects" element={<BlackProjects />} />  
+          <Route path="/Projects" element={<BlackProjects />} />  
 
           <Route path="/Mario" element={<Mario />} /> 
           <Route path="/MarioProjects" element={<MarioProjects />} />  

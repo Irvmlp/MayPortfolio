@@ -18,11 +18,6 @@ function Black() {
         <div className='h-screen background-black'>
            <IamContainer/>
         </div>
-        <div className='h-screen background-black'>
-           <Experience/>
-        </div>
-        
-
         <Footer/>
     </div>
   );

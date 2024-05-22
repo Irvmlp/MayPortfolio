@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import LlamaProject from '../1-Black-Portfolio/llamaEduProject';
-import FinturoProject from '../1-Black-Portfolio/FinturoProject';
+import LlamaProject from '../1-Black-Portfolio/projectFiles/llamaEduProject';
+import FinturoProject from '../1-Black-Portfolio/projectFiles/FinturoProject';
+import JourneyProject from '../1-Black-Portfolio/projectFiles/JourneyGenie';
+import JamiProject from '../1-Black-Portfolio/projectFiles/JamiProject';
+import DaisyProject from '../1-Black-Portfolio/projectFiles/DaisyProject';
+import PelosCocosProject from '../1-Black-Portfolio/projectFiles/PelosCoco';
+
 
 const AllProjects = () => {
     const [openProject, setOpenProject] = useState("Project 1");
@@ -16,34 +21,33 @@ const AllProjects = () => {
     );
 
     return (
-        <div className="Btn_container mt-40 px-16 items-center justify-center">
+        <div className="Btn_container mt-4 sm:mt-12 px-8 md:px-12 items-center justify-center">
          <div className='flex flex-col px-2 font-bold text-l rounded-xl GtRegular text-white border-2 border-white w-full overflow-x-hidden md:w-full md:flex-row items-center justify-center '>
-    <div className='flex flex-row w-full py-2 rounded-xl justify-center'>
-        <div className={`button1 w-full text-center  px-8 py-3 rounded-xl ${openProject !== 'Project 1' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 1')}>
+  
+    <div className='flex flex-row w-full py-2 px-8 gap-2 md:gap-4 rounded-xl justify-center'>
+        <div className={`button1 w-full text-center px-2  py-3 rounded-xl ${openProject !== 'Project 1' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 1')}>
             LlamaEdu.com
         </div>
-        <div className={`button1 w-full text-center  px-8 py-3 rounded-xl ${openProject !== 'Project 2' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 2')}>
+        <div className={`button1 w-full text-center px-2  py-3 rounded-xl ${openProject !== 'Project 2' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 2')}>
             Finturo.com
         </div>
     </div>
-    <div className='flex flex-row w-full py-2 rounded-xl justify-center'>
-        <div className={`button1 w-full text-center  px-8 py-3 rounded-xl ${openProject !== 'Project 3' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 3')}>
-            Jamipainting.com
+    <div className='flex flex-row w-full py-2 px-8 gap-2 md:gap-4 rounded-xl justify-center'>
+        <div className={`button1 w-full text-center px-2  py-3 rounded-xl ${openProject !== 'Project 3' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 3')}>
+            Jamipainting
         </div>
-        <div className={`button1 w-full text-center  px-8 py-3 rounded-xl ${openProject !== 'Project 4' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 4')}>
-            JounreyGenie.io
-        </div> 
-    </div>
-    <div className='flex flex-row w-full py-2 rounded-xl justify-center'>
-        <div className={`button1 w-full text-center  px-8 py-3 rounded-xl ${openProject !== 'Project 5' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 5')}>
-            PelosCoco.com
-        </div>
-        <div className={`button1 w-full text-center  px-8 py-3 rounded-xl ${openProject !== 'Project 6' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 6')}>
-            Daisy Co
+        <div className={`button1 w-full text-center px-2  py-3 rounded-xl ${openProject !== 'Project 4' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 4')}>
+            Journeygenie
         </div>
     </div>
-
-
+    <div className='flex flex-row w-full py-2 px-8 gap-2 md:gap-4 rounded-xl justify-center'>
+        <div className={`button1 w-full text-center px-2  py-3 rounded-xl ${openProject !== 'Project 5' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 5')}>
+            PelosCoco
+        </div>
+        <div className={`button1 w-full text-center px-2  py-3 rounded-xl ${openProject !== 'Project 6' ? '' : 'bg-white text-black'}`} onClick={() => handleProjectClick('Project 6')}>
+            Daisy
+        </div>
+    </div>
 </div>
 
             <div className=''>
@@ -54,16 +58,16 @@ const AllProjects = () => {
                    <FinturoProject />
                 </ProjectSection>
                 <ProjectSection title="Project 3">
-                   <LlamaProject />
+                   <JamiProject />
                 </ProjectSection>
                 <ProjectSection title="Project 4">
-                   <FinturoProject />
+                   <JourneyProject />
                 </ProjectSection>
                 <ProjectSection title="Project 5">
-                   <LlamaProject />
+                   <PelosCocosProject />
                 </ProjectSection>
                 <ProjectSection title="Project 6">
-                   <LlamaProject />
+                   <DaisyProject />
                 </ProjectSection>
             </div>
         </div>
