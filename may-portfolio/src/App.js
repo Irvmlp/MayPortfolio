@@ -1,31 +1,38 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Black from './pages/1-BlackPortfolioFiles/BlackPortfolio.js';
-import BlackProjects from './pages/1-BlackPortfolioFiles/BlackPortfolioProjects.js';
-import BlackAbout from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/pages/1-BlackPortfolioFiles/BlackPortfolioAbout.js';
+import Black from './pages/1-BlackPortfolioFiles/BlackPortfolio';
+import BlackProjects from './pages/1-BlackPortfolioFiles/BlackPortfolioProjects';
+import BlackAbout from './pages/1-BlackPortfolioFiles/BlackPortfolioAbout';
 
-import Mario from './pages/3-MarioPortfolio/MarioPortfolio.js';
-import MarioProjects from './pages/3-MarioPortfolio/MarioPortfolioProjects.js';
+import Mario from './pages/3-MarioPortfolio/MarioPortfolio';
+import MarioProjects from './pages/3-MarioPortfolio/MarioPortfolioProjects';
 
-import Loose from './pages/2-LooseLeafPortfolioFiles/LooseLeafPortfolio.js';
-import LooseProjects from './pages/2-LooseLeafPortfolioFiles/LoosePortfolioProjects.js';
+import Loose from './pages/2-LooseLeafPortfolioFiles/LooseLeafPortfolio';
+import LooseProjects from './pages/2-LooseLeafPortfolioFiles/LoosePortfolioProjects';
+
+import { ThemeProvider } from './ThemeContext'; // Import ThemeProvider
+import './index.css'; // Tailwind CSS imports
+
+import NotFound from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/NotFound.js';
 
 export default function App() {
   return (
-    <div>
+    <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Black/>} />
-          <Route path='About' element={<BlackAbout/>} />
-
-          <Route path="/Black" element={<Black />} /> 
-          <Route path="/Projects" element={<BlackProjects />} />  
-
-          <Route path="/Mario" element={<Mario />} /> 
-          <Route path="/MarioProjects" element={<MarioProjects />} />  
-
+          <Route path="/" element={<Black />} />
+          <Route path="about" element={<BlackAbout />} />
+          <Route path="black" element={<Black />} />
+          <Route path="projects" element={<BlackProjects />} />
+          <Route path="mario" element={<Mario />} />
+          <Route path="marioprojects" element={<MarioProjects />} />
+          <Route path="loose" element={<Loose />} />
+          <Route path="looseprojects" element={<LooseProjects />} />
+          {/* Catch-all route for 404 Not Found */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </ThemeProvider>
   );
 }

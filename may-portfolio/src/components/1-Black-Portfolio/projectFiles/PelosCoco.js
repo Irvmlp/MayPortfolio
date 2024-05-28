@@ -1,159 +1,134 @@
-import React from 'react';
-import { ReactComponent as ArrowL } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/arrowL.svg';
-import { ReactComponent as ArrowR } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/arrowR.svg';
-import { ReactComponent as LLamaUserJourney } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/llamaUserJourney.svg';
+import React, { Suspense, lazy } from 'react';
+import Mockup1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/brand1.png';
+import Mockup2 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/brand2.png';
+import Mockup3 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/brand3.png';
+import Mockup4 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/brand4.png';
 
-import Mockup1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisy1.png';
-import Phone1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyphone1.png';
-import Phone2 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyphone2.png';
-import Phone3 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyphone3.png';
-import Phone4 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyphone4.png';
-import Phone5 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyphone5.png';
-import Phone6 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyphone6.png';
+import phone1 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone1.png';
+import phone2 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone2.png';
+import phone3 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone3.png';
+import phone4 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone4.png';
+import phone5 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone5.png';
+import phone6 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone6.png';
+import phone7 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone7.png';
+import phone8 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone8.png';
+import phone9 from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/5.pelos_pics/phone9.png';
 
-
-import DaisyPersonas from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyPersonas.png';
-import DaisyWordCloud from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/daisyWordCloud.png';
-import DaisyJourneyMap from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/gallery/DaisyJourneyMap.png';
-
+const LazyProgressDark = lazy(() => import('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/Rsvgs/PelosSvgs/ProgressDarkLazy.js'));
+const LazyProgressLight = lazy(() => import('/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/Rsvgs/PelosSvgs/ProgressDarkLight.js'));
 
 const PelosProject = () => {
-    const scrollToTop = () => {
-        console.log('Scroll to top button clicked');
-        window.scrollTo(0, 0); // Remove smooth behavior for testing
-      };
 
   return (
-    <div className="h-full min-w-full font-inter">
-      {/* 1. Story */}
-      <section className='flex flex-col md:flex-row py-8 mt-12 bg-white rounded-xl border-2 botder-white h-full w-full mx-auto'>
-    <div className='flex  w-full md:w-3/5 h-1/2 md:h-full  flex-col'>
-        <div className='px-8 flex text-4xl w-full'>
-            <h2 className='px-8 GtRegularBold text-pink-400'>Pelos Coco</h2>
+    
+    <div className="h-full min-w-full font-inter bg-[#ECD8AE] dark:bg-[#2C363D]">
+
+<Suspense fallback={<div>Loading...</div>}>
+        <div className='w-full h-8 dark:flex hidden'>
+          <LazyProgressDark />
         </div>
-        <div className='flex h-18 items-center text-black text-lg '>
-            <p className='GtRegular flex flex-row px-8 mt-2 md:px-16'>Responsible for UX Design, User Research, Branding, Usability Research</p>
+        <div className='w-full h-8 dark:hidden flex'>
+          <LazyProgressLight />
         </div>
-    </div>  
-    <div className='flex w-full md:w-2/5 h-1/2 md:h-full flex-col'>
-        <div className='flex px-8 text-4xl w-full justify-end'>
-            <h2 className='GtRegularBold px-8 text-pink-400'>Freelance| 2023</h2>
+ {/*  ---------------------------------------------------- 1. Story -------------------------------------------------*/}    
+ <section className='flex  text-black dark:text-white  flex-col sm:flex-row py-8 mt-0 bg-transparent  rounded-xl border-2 dark:border-white border-black h-full w-full mx-auto'>
+    {/* Container for text content */}
+    <div className='flex flex-col w-full sm:w-3/4 h-full items-start justify-start sm:ml-4 '>
+        {/* Title container */}
+        <div className='px-4 flex justify-center sm:justify-start items-center text-xl sm:text-xl md:text-2xl lg:text-3xl w-full'>
+            <h2 className='GtRegularBold text-black dark:text-white '>Pelos Coco</h2>
         </div>
-        <div className='flex h-18 items-center text-lg justify-end '>
-            <p className='GtRegular text-black px-8 mt-2 md:px-16'> Figma | Adobe Creative Suite | G Suite </p>
+        {/* Description container */}
+        <div className='px-4 lg:mt-4 flex justify-center sm:justify-start items-center text-lg sm:text-xl w-full'>
+            <p className='GtRegular text-center sm:text-left'>
+            Created a comprehensive branding package and developed a user-friendly food ordering website.
+            </p>        </div>    </div>
+    <div className='flex mt-8 sm:mt-0 flex-col w-full sm:w-1/4 h-full items-start justify-start sm:mr-4'>
+        {/* Title container */}
+        <div className='px-4 flex justify-center sm:justify-end items-center text-xl sm:text-xl md:text-2xl lg:text-3xl w-full'>
+            <h2 className='GtRegularBold text-black dark:text-white '>Freelance  | 2024</h2>
         </div>
-    </div>
-</section>
-        {/* image of Mockup */}
-     <section className='mt-12 border-2 rounded-xl border-white bg-white items-center justify-center flex min-h-[450px] w-full'>
-        <div className='w-full h-full md:w-1/2 md:h-1/2'>
-         <img src={Mockup1} loading='lazy' className="mr-4 mt-8 w-full h-auto" />
+        {/* Description container */}
+        <div className='px-4 lg:mt-4 flex justify-center sm:justify-end items-center text-lg sm:text-xl w-full'>
+            <p className='GtRegular text-center sm:text-right'>Illustrator, Photoshop, Figma</p>
+        </div>    </div>   </section>
+
+ {/*  ---------------------------------------------------- 1. Story -------------------------------------------------*/}    
+     <section className='mt-4  border-2 rounded-xl dark:border-white border-black items-center justify-center flex  w-full'>
+        <div className='w-full px-4 sm:px-16  h-full grid grid-cols-1 gap-2 md:grid-cols-2 mb-12'>
+         <img src={Mockup1} loading='lazy' className="mr-4 mt-8 w-full h-auto" /> 
+         <img src={Mockup3} loading='lazy' className="mr-4 mt-0 sm:mt-2 md:mt-8 w-full h-auto" />  
+         <img src={Mockup2} loading='lazy' className="mr-4 sm:mt-2 w-full h-auto" /> 
+         <img src={Mockup4} loading='lazy' className="mr-4 mt-0 sm:-mt-20 md:-mt-8 lg:-mt-14 xl:-mt-20 w-full h-auto" /> 
+         </div>  
+
+          </section>
+{/*  ---------------------------------------------------- 1. Story -------------------------------------------------*/}    
+<section className='flex flex-col sm:flex-row py-8 mt-4 rounded-xl border-2 border-black dark:border-white h-full w-full mx-auto'>
+    {/* Container for text content */}
+    <div className='flex flex-col w-full h-full items-start justify-start sm:ml-4'>
+        {/* Title container */}
+        <div className='px-4 flex justify-center sm:justify-start items-center text-xl sm:text-xl md:text-2xl lg:text-3xl w-full'>
+            <h2 className='GtRegularBold text-black dark:text-white'>Final Screens</h2>
         </div>
-     </section>
-     {/* 1. Story */}
-     <section className='flex flex-col md:flex-row py-16 mt-12 bg-white rounded-xl border-2 botder-white h-full w-full mx-auto'>
-    <div className='flex  w-full md:w-1/2 h-1/2 md:h-full  flex-col'>
-        <div className='px-8 flex text-4xl w-full'>
-            <h2 className='md:px-8 px-0 GtRegularBold text-pink-400'>Problem</h2>
-        </div>
-        <div className='flex h-24 md:mt-0 mt-8 items-center text-black text-lg '>
-            <p className='GtRegular flex flex-row px-8 mt-12 md:px-16'> Understanding and managing reproductive health can be an overwhelming task for many women, mainly due to the lack of user-friendly, personalized, and accessible tools. The necessity to simplify this journey and bring knowledge, empowerment, and control to women's fingertips inspired the creation of Daisy. </p>
-        </div>
-    </div>  
-    <div className='flex  w-full md:w-1/2 h-1/2 md:h-full md:py-0 py-8 flex-col'>
-    <div className='px-8 flex md:mt-0 mt-8 justify-end text-4xl w-full'>
-    <h2 className='px-8 GtRegularBold text-pink-400'>Solution</h2>
-</div>
-<div className='flex h-24 justify-end md:mt-0 mt-8 mb-8 items-center text-black text-lg'>
-    <p className='GtRegular justify-end text-right flex flex-row px-8 mt-2 md:px-16 '> Our goal was to make reproductive health tracking not just effortless but engaging. It's more than a platform; it's a personal health companion that presents data in a relatable, intuitive, and secure manner. By translating complex health metrics into simple, actionable insights, Daisy nurtures an enriching bond between women and their health information, ultimately fostering reproductive freedom. </p>
-</div>
-    </div>  
-</section>      
- {/* 2. Product */}
- <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
-    <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 GtRegularBold text-pink-400'>User Research</h2>
-    </div>   
-</section>
- {/* 2. Product */}
- <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
-    <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 GtRegularBold text-pink-400'>Word Cloud</h2>
-    </div>   
-    <div className='mt-0 items-center justify-center flex  w-full'>
-        <div className='items-center w-full px-8 md:px-24 py-12'>
-        <img src={DaisyWordCloud} loading='lazy' className="mr-4 mt-8 w-full h-auto" />
-        </div>
-     </div>
-     <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 text-lg GtRegular md:text-2xl text-black'> The people we were helping already trust us. So we wanted to combine
-            the MVP of what we help people do.</h2>
-    </div>  
-</section>
- {/* 2. Product */}
- <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
-    <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 GtRegularBold text-pink-400'>User Personas</h2>
-    </div>   
-    <div className='mt-0 items-center justify-center flex  w-full'>
-        <div className='items-center w-full px-8 md:px-24 py-12'>
-        <img src={DaisyPersonas} loading='lazy' className="mr-4 mt-8 w-full h-auto" />
-        </div>
-     </div>
-     <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 text-lg GtRegular md:text-2xl text-black'> The people we were helping already trust us. So we wanted to combine
-            the MVP of what we help people do.</h2>
-    </div>  
-</section>
- {/* 2. Product */}
- <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
-    <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 GtRegularBold text-pink-400'>User Journey Map</h2>
-    </div>   
-    <div className='mt-0 items-center justify-center flex  w-full'>
-        <div className='items-center w-full px-8 md:px-24 py-12'>
-        <img src={DaisyJourneyMap} loading='lazy' className="mr-4 mt-8 w-full h-auto" />
-        </div>
-     </div>
-     <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 text-lg GtRegular md:text-2xl text-black'> The people we were helping already trust us. So we wanted to combine
-            the MVP of what we help people do.</h2>
-    </div>  
-</section>
- {/* 2. Product */}
- <section className='flex flex-col py-8 border-2 border-white bg-white mt-12 rounded-xl  h-full w-full mx-auto'>
-    <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 GtRegularBold text-pink-400'>Final Screens</h2>
-    </div>   
-   
- <div className='w-full h-full flex justify-center flex-row py-8'>
-        <img src={Phone1} loading='lazy' className="w-1/5 h-auto" />
-         <img src={Phone2} loading='lazy' className="w-1/5 h-auto" />
-         <img src={Phone3} loading='lazy' className="w-1/5 h-auto" />
-        </div>
+        {/* Description container */}
+        <div className='px-4 lg:mt-4 flex flex-col justify-center sm:justify-end items-center text-lg sm:text-xl  w-full'>
+            
         <div className='w-full h-full flex justify-center flex-row py-8'>
-        <img src={Phone4} loading='lazy' className="w-1/5 h-auto" />
-         <img src={Phone5} loading='lazy' className="w-1/5 h-auto" />
-         <img src={Phone6} loading='lazy' className="w-1/5 h-auto" />
+        <img src={phone1} loading='lazy' className="w-1/3  h-auto" />
+         <img src={phone2} loading='lazy' className="w-1/3  h-auto" />
+         <img src={phone3} loading='lazy' className="w-1/3  h-auto" />
         </div>
-     <div className='px-8 flex text-4xl w-full'>  
-            <h2 className='md:px-8 px-0 text-lg GtRegular md:text-2xl text-black'> The people we were helping already trust us. So we wanted to combine
-            the MVP of what we help people do.</h2>
-    </div>  
-</section>
-      {/* 2. Product */}
-      <section className='  flex items-center justify-center h-12'>
-      </section>
 
-      <section className='  flex items-center justify-center h-24 mb-12'>
-      <button onClick={scrollToTop} className='bg-white py-4 px-8 shadow-md rounded-full'>
-          Scroll to top
-        </button>
-      </section>
+        <div className='w-full h-full flex justify-center flex-row'>
+        <img src={phone4} loading='lazy' className="w-1/3  h-auto" />
+         <img src={phone5} loading='lazy' className="w-1/3  h-auto" />
+         <img src={phone6} loading='lazy' className="w-1/3 h-auto" />
+        </div>
 
+        <div className='w-full h-full flex justify-center flex-row py-8'>
+        <img src={phone7} loading='lazy' className="w-1/3 h-auto" />
+         <img src={phone8} loading='lazy' className="w-1/3 h-auto" />
+         <img src={phone9} loading='lazy' className="w-1/3 h-auto" />
+        </div>
+
+            <p className='GtRegular mt-4 sm:mt-8 text-center text-xl sm:text-xl md:text-2xl sm:text-left text-black dark:text-white'>
+            Intuitive, clean, and brand aligned UI/UX for their food app.
+            </p>        </div>    </div>
+    </section>
+    
+ {/*  ---------------------------------------------------- 1. Story -------------------------------------------------*/}   
+  <section className='flex flex-col sm:flex-row py-8 mt-4 rounded-xl border-2 border-black dark:border-white h-full w-full mx-auto'>
+    {/* Container for text content */}
+    <div className='flex flex-col w-full h-full items-start justify-start sm:ml-4'>
+        {/* Title container */}
+        <div className='px-4 flex justify-center sm:justify-start items-center sm:flex-row flex-col text-xl sm:text-xl md:text-2xl lg:text-3xl w-full'>
+            <h2 className='GtRegularBold w-full sm:w-1/3 text-center sm:text-left text-black dark:text-white'>Reflection</h2>
+            <h2 className='GtRegularBold w-full sm:w-2/3 text-center sm:text-right text-gray-600'></h2>
+        </div>
+        {/* Description container */}
+     <div className='px-4 lg:mt-4 flex flex-col justify-center sm:justify-end items-center text-lg sm:text-xl md:text-2xl  w-full'>
+            <p className='GtRegular text-center sm:text-left text-black dark:text-white'>Working on Pelos Coco's branding and 
+            food ordering website was a rewarding experience. Supporting a local Phoenix restaurant's opening was incredibly 
+            fulfilling, and I take pride in knowing my contributions will help them grow their presence. This project not only 
+            allowed me to flex my design skills but also reinforced the importance of user-centered design, ultimately making me a 
+            stronger and more versatile designer.
+
+
+
+
+
+
+</p>
+        </div>       </div>  </section>
+ {/*  ---------------------------------------------------- 1. Story -------------------------------------------------*/}    
+
+    
+
+ </Suspense>
     </div>
+    
   );
 };
 
 export default PelosProject;
-

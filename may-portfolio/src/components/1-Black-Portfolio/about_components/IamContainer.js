@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
+
+
 import Tool from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/components/1-Black-Portfolio/Tool.js';
 import { ReactComponent as HtmlIcon } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/toolsSvgs/1.htmlIcon.svg';
 import { ReactComponent as CSSIcon } from '/Users/irvinglamadrid/MayPortfolio/may-portfolio/src/svgs/toolsSvgs/2.cssIcon.svg';
@@ -13,32 +15,39 @@ import { ReactComponent as PhotoIcon } from '/Users/irvinglamadrid/MayPortfolio/
 
 
 
+
 const Name = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex w-full px-14 md:px-24 flex-col'>
     
-      <div className="w-5/6 -mt-24 flex justify-center md:ml-24 md:justify-start">
-      <div className='flex h-full flex-col mt-64 ml-14 text-white'>
+      <div className="flex justify-center  md:justify-start">
+
+      <div className='flex h-full flex-col  text-black dark:text-white'>
         <div>       
-        <h3 className='text-5xl md:text-6xl GtRegularBold'>I am, </h3>
-        <h3 className='py-1 mt-4 text-3xl md:text-2xl GtRegular'>A natural builder who carries around a notebook around at all times to make sure
+        <h3 className='GtRegularBold text-3xl'>I am, </h3>
+        <h3 className='py-1 mt-4 GtRegular font-semibold text-xl'>A natural builder who carries around a notebook around at all times to make sure
         I could write down any idea I have. I have applying the design process my entire life, working with my hands, and incorporating
         and a perfectionist, so getting a degree in product design engineering at Stanford Univeristy only made sense. </h3>
+
           </div>
-          <h3 className='text-4xl md:text-3xl mt-20  GtRegular'>I'm good with: </h3>
-          <div className='flex mt-4 gap-2 text-sm flex-row'>
+
+          <h3 className='mt-12 GtRegular text-2xl'>I'm good with: </h3>
+          <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-4 gap-2 text-xs'>
+     
+          <Suspense fallback={<div>Loading...</div>}>
        <Tool icon={<HtmlIcon />} text="Html" />
        <Tool icon={<CSSIcon />} text="CSS" />
        <Tool icon={<JavaScriptIcon />} text="Javascript" />
        <Tool icon={<ReactIcon/>} text="React" />
        <Tool icon={<FigmaIcon />} text="Figma" /> 
-       </div>
-       <div className='flex mt-4 gap-2 text-sm flex-row'>
        <Tool icon={<GitHubIcon />} text="Github" />
        <Tool icon={<NodeIcon />} text="Node.js" />
        <Tool icon={<TailwindIcon/>} text="Tailwind" />
        <Tool icon={<AsanaIcon />} text="Asana" />
        <Tool icon={<PhotoIcon />} text="Photoshop" />
+          
+       </Suspense>
+
        </div>
        </div>
 
